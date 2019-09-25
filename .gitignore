@@ -219,6 +219,8 @@ pythontex-files-*/
 # easy-todo
 *.lod
 
+# pdf
+*.pdf
 # xcolor
 *.xcp
 
