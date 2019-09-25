@@ -1,6 +1,13 @@
-sudo: required
-language: generic
+dist: xenial
+language: minimal
 services: docker
+sudo: required
+
+addons:
+  apt:
+    packages:
+    - fonts-font-awesome
 
 script:
+  - fc-cache -fsv
   - docker run --mount src=$TRAVIS_BUILD_DIR,target=/usr/src/tex,type=bind dxjoke/tectonic-docker /bin/sh -c "tectonic resume.tex"
