@@ -10,6 +10,8 @@ deploy:
   provider: releases
   api_key:
     secure: Cn+Azo7RSo8C7VxsaHn/E0QGfCLBG4kFg+xo2D2XRM59NLN/JbARsuvu8jdF0fmsBdYNYq1K9b33jFrvmkjz82dd/n932qpq4M2DU/oQd2CN0IyGvDGSbtHTwwMT7QP8kNcz5vKke3DjJSdmi1PTYVqqeYfTqz2fLxRrd/oBtvcN15xXkxHSDZcR+yCp2qayzV2PyBTK4kN9wLlJ2cEIDDRIx9aYmV3mF9JkFUq3XdXndzRS4y6RDKpmt2MylyZzM+r+FM3i8dKEOthiTgfDbOc3kBHaczSUdNf9g4edOUzqWCIvdFgXRud3BYAb179hJIazgd8XXCqbCKUgg2/L4HUDEzTTRG4qfUWbRO3KjnZqkRJbFJXYvsgDlNLRnx0AqRMIKtsWefGApQcgMdkHIeqJ9K21p0Q/1rBaY2EwKq/bACN/sHhdMqpIcvsJYSA4AT8Mjs5yOQI7K2G15yPLzNEi1PHPXVY3YXMrWaN3zuGY5zwW0yNmxc9JYa4KaSRhnGZRF25MnBt8p1ewXSIKd1Z28OqJAyAIPAtG2pQGQ1xrcuomktPiqJLgHIetg6+9qjKNlVInRzt4ZBKNyTL3q8NBIPL2QOh6vCYKO/JDpWO03qqIhIPEx5Sxk7uhJNVFv+95rEJGDsLT5bwN8zHOW32V0JN46XdpBW22LyX7RAc=
-  file: ${TRAVIS_BUILD_DIR}/resume.pdf
+  file: ./resume.pdf
+  skip_cleanup: true
   on:
+    repo: LVMBDV/resume
     tags: true
