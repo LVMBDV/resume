@@ -1,0 +1,99 @@
+\documentclass[a4paper, 12pt]{article}
+\pagenumbering{gobble}
+\usepackage[a4paper, top=1cm, bottom=1cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome}
+
+\hypersetup{
+	colorlinks=true,
+	allcolors=blue!50!black,
+}
+
+\setlist[itemize]{leftmargin=*,itemsep=0.5\parskip,topsep=2pt}
+
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0cm}
+
+\newcommand{\resumeSection}[1]{\vspace{12pt}{\Large \bfseries #1} \vspace{-9pt} \\ \rule{\textwidth}{0.7pt}}
+\newcommand{\resumeSubsection}[1]{\textbf{#1}}
+\newcommand{\resumeFAIcon}[1]{\makebox[24pt][c]{\faicon{#1}}}
+
+\begin{document}
+	\begin{center}
+		{\huge \bfseries Ata Kuyumcu}
+
+		\begin{tabular}{c c}
+			\href{mailto:ata.kuyumcu@yandex.ru}{ata.kuyumcu@yandex.ru} &
+			\href{https://ata.gitlab.io}{ata.gitlab.io}
+			
+		\end{tabular}
+	\end{center}
+
+	\vspace{-20pt}
+	\resumeSection{\resumeFAIcon{briefcase}Experience}
+	
+	\resumeSubsection{Full Stack Developer} \hfill Jan 2019  – Present \\
+	Countly \hfill Remote
+	
+	\begin{itemize}
+		\item Implemented multiple new features for Countly Community \& Enterprise Editions such as two-factor authentication and JIRA integration.
+		\item Optimized an I/O bound feature for small to medium scale MongoDB collections, improving performance by at least 100\%.
+		\item Maintained and is in the process of reimplementing the open source C++ SDK used to integrate Countly into native desktop applications.
+	\end{itemize}
+
+	\resumeSubsection{Software Developer} \hfill May – Aug 2018 \\
+	Özgür Yazılım A.Ş. \hfill Remote
+		
+	\begin{itemize}
+		\item Internationalized a large Ruby on Rails codebase (1 million lines of code) in 3 months.
+		\item Worked fully remotely with a distributed team; using GitHub, Pivotal Tracker and Travis CI to collaborate with the QA team and management.
+	\end{itemize}
+
+	\resumeSubsection{System Administrator} \hfill Sep 2017 – Feb 2018 \\
+	Global Review of Social Sciences \hfill İzmir, Turkey
+	
+	\begin{itemize}
+		\item Recovered the old journal’s database from the backups of a compromised server, preserving the journal layout and the archived articles to set up a new Open Journal Systems instance.
+		\item Found the remote code execution vulnerability that led to the breach on the old instance and secured the new one against it.
+		\item Maintained server security and availability until the project was canceled.
+	\end{itemize}
+	
+	\resumeSection{\resumeFAIcon{heart}Projects}
+	
+	\begin{itemize}
+		\item \resumeSubsection{\href{https://gitlab.com/Ata/badger}{Badger}:} A web service that generates sleek project badges with data from various APIs such as Travis CI and Liberapay. Built using Kemal, a simple web application library for Crystal.
+		\item \resumeSubsection{\href{https://github.com/LVMBDV/blockchan}{Blockchan}:} A proof of concept implementation of a decentralized anonymous imageboard that uses a public, proof-of-work governed blockchain to store and synchronize posts between many peers. Presented as my graduation project in May of 2018.
+		\item \resumeSubsection{\href{https://gitlab.com/Ata/thx-1138}{thx-1138}:} A minimalistic hugo theme originally made for \href{https://ata.gitlab.io}{ata.gitlab.io}.
+	\end{itemize}
+	
+	\resumeSection{\resumeFAIcon{graduation-cap}Education}
+	
+	\begin{itemize}
+		\item \resumeSubsection{İzmir University of Economics} \hfill Sep 2014 – Feb 2019 \\
+		Bachelor’s Degree in Computer Engineering \hfill İzmir, Turkey
+	\end{itemize}
+
+	\newpage
+	
+	\resumeSection{\resumeFAIcon{users}Organizations}
+	
+	\begin{itemize}
+		\item Community Member at \href{https://dailyprog.gitlab.io}{dailyprog} \hfill Oct 2018 – Present
+		\item Team Member at \href{https://twitter.com/Suloband}{SULOBAND} (formerly YubitSec) \hfill Jan 2018 – Present
+	\end{itemize}
+
+	\resumeSection{\resumeFAIcon{trophy}Accomplishments}
+
+	\begin{itemize}
+		\item 3rd Place Team at \href{https://ctf.stm.com.tr}{STM CTF 2018} Online Qualifiers \hfill Oct 2018
+		\item 1st Place Team at \href{http://codeofduty.iyte.edu.tr}{İzHack - Code of Duty 2018} \hfill Mar 2018
+	\end{itemize}
+
+	\resumeSection{\resumeFAIcon{envelope}References}
+	
+	References available upon request.
+
+\end{document}
